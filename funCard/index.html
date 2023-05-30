@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+    <title>FunCards</title>
+</head>
+
+<body>
+    
+    <div id="Caja">
+
+        <header id="encabezado">
+            <img id="logoImg" src="img/logoo1.png" alt="Logo De fun cards">
+            <nav id="menu">
+                <button onclick="togglePopup()" class="first-button ini">INICIO</button>
+                <button onclick="togglePopupR()" class="first-button " id="reg">REGISTRO</button>
+            </nav>
+        </header>
+
+        <div  class="popup" id="login-formModal">
+            <from class="content" id="popup-1">
+                <div class="close-btn" onclick=" togglePopup()">×</div>
+                <h2>inicio de secion</h2>
+                <div  class="input-field"><input id="login-email" placeholder="Email" class="validate"></div>
+                <div class="input-field"><input id="login-pass" placeholder="Password" class="validate"></div>
+                <button type="submit" class="second-button"><a href="">INICIO</a></button>
+                <p>Don't have an account? <a onclick="togglePopupR()">Sign Up</a></p>
+            </from>
+        </div>
+
+        <div class="popup" id="signup-formModal">
+            <form class="content" id="signup-form">
+                <div class="close-btn" onclick="togglePopupR()">×</div>
+                <h2>Registro</h2>
+                <div class="input-field" ><input id="inpNombre" placeholder="Nombre" class="validate"></div>
+                <div class="input-field" ><input id="inpApellido" placeholder="Apellido" class="validate"></div>
+                <div class="input-field" ><input id="inpEmail" placeholder="Email" class="validate"></div>
+                <div class="input-field" ><input id="inpPass" placeholder="Password" class="validate"></div>
+                <button id="envio" type="submit" class="second-button"><a href="">Registro </a></button>
+                <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
+            </from>
+        </div>
+        
+        <div class="CajaDescripcion">
+            <h1>FUNCARDS</h1>
+            <p>La nueva forma de aprender a leer memorizar vocabulario <br>
+                de una manera veloz y divertida.</p>
+            <div id="cajaTarjeta">
+                <div class="tarjetas">
+                    <img src="iconosTarjeta/bus-school.png" alt="">
+                    <div class="tarjetaDes">
+                        <p>autobus</p>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <img src="iconosTarjeta/comida/burger.png" alt="">
+                    <div class="tarjetaDes">
+                        <p>hamburgesa</p>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <img src="iconosTarjeta/profeciones/pilot.png" alt="">
+
+                    <div class="tarjetaDes">
+                        <p>piloto</p>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <p>“ El vocabulario es el ocenano de las ideas ”</p>
+
+            </section>
+            <a href="/vistas/funcarsDemo.html" class="boton">Empezar</a>
+
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <h3>Foolish Developer</h3>
+                <p>Foolish Developer --- source code.</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <!-- add all information -->
+
+                <p>copyright &copy;2021 <a href="#">foolishdeveloper</a> </p>
+                <div class="footer-menu">
+                    <ul class="f-menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+      
+      <script src="./src/js/click.js"></script>
+      <script type="module" src="./src/js/index.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+</body>
+
+</html>
